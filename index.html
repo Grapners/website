@@ -95,9 +95,29 @@
             }
         }
     </style> -->
+
     <style>
         /* Basic styles for the body */
 
+        .card {
+            height: 100%;
+            /* Make the card take full height of its container */
+            display: flex;
+            /* Use flexbox to align items */
+            flex-direction: column;
+            /* Stack children vertically */
+        }
+
+        .card-body {
+            flex: 1;
+            /* Allow the body to grow and fill the card */
+            display: flex;
+            /* Use flexbox for card body */
+            flex-direction: column;
+            /* Stack contents vertically */
+            justify-content: space-between;
+            /* Distribute space between elements */
+        }
 
         /* Container for the scrolling products */
         .product-marquee {
@@ -116,7 +136,7 @@
         /* Marquee animation */
         .marquee {
             display: inline-block;
-            animation: scroll 25s linear infinite;
+            animation: scroll 5s linear infinite;
             /* Adjust speed */
         }
 
@@ -157,7 +177,7 @@
 
             }
 
-        
+
 
             85% {
                 transform: translateX(-100%);
@@ -182,7 +202,7 @@
             <nav class="main-menu main-menu-two clearfix">
                 <div class="main-menu-two-wrapper clearfix">
                     <div class="main-menu-two-wrapper__logo">
-                        <a href="index.html"><img src="images/new-logo-v2-NB.png" alt=""></a>
+                        <a href="index.html"><img src="images/new-logo-v2-NB.png" style="width: 80%;" alt=""></a>
                     </div>
                     <div class="main-menu-two-wrapper__main-menu d-flex">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -434,22 +454,22 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-6 col-lg-4">
 
                     <div class="card">
-                        <!-- <img src="images/D-4.jpg" class="card-img-top" alt="..."> -->
+                        <div class="text-center mt-3 services-one__icon">
+                            <span class="icon-webpage"></span>
+                        </div>
                         <div class="card-body">
-                            <div class=" text-center services-one__icon">
-                                <span class="icon-app-development"></span>
-                            </div>
-                            <h5 class="card-title mt-3 text-center">Social Media Marketing</h5>
-                            <p class="card-text mt-2 text-center">We have an expert team who handles our clients social
-                                media marketing.
-                                We cover all targeted social platforms to advertise your business.
-                            </p>
+                            <h5 class="card-title text-center">Social Media Marketing</h5>
+                            <p class="card-text text-center">We have an expert team who handles our clients' social
+                                media marketing. Our team specializes in creating tailored strategies that engage your
+                                audience.</p>
                             <!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
                         </div>
                     </div>
+
                 </div>
                 <!-- <div class="col-sm-12 col-md-6 col-lg-3">
 
@@ -462,9 +482,9 @@
                     </div>
                 </div> -->
 
-          
 
-           
+
+
                 <div class="col-sm-12 col-md-6 col-lg-4">
 
                     <div class="card">
@@ -490,10 +510,10 @@
                             <div class="text-center services-one__icon">
                                 <span class="icon-innovation"></span>
                             </div>
-                            <h5 class="card-title mt-3 text-center">Customer Services</h5>
+                            <h5 class="card-title text-center">Customer Services</h5>
                             <!-- <br /> -->
-                            <p class="card-text mt-2 text-center">we are an experienced contact center with over 150
-                                experienced employees that has been providing customer services Since 2018.</p>
+                            <p class="card-text text-center">Our comprehensive full-stack engineering expertise delivers
+                                unparalleled digital experiences. With a deep proficiency and extensive experience .</p>
                             <!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
                         </div>
                     </div>
@@ -1251,7 +1271,7 @@
         <!-- /.search-popup__content -->
     </div>
     <!-- /.search-popup -->
-  
+
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
